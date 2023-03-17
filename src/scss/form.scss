@@ -1,0 +1,46 @@
+.comment-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    padding: 10px;
+    padding-left: 5%;
+
+    .comments-warning {
+        color: transparent;
+    }
+
+    textarea,
+    input {
+
+        background-color: transparent;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 50px;
+        color: #fff;
+        padding: 5px 15px;
+        overflow: scroll;
+    }
+
+    &__publishBtn {
+        margin-left: 20px;
+        border: none;
+        border-bottom: 1px solid gray;
+        color: gray;
+        background-color: transparent;
+        font-size: 16px;
+
+        &:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+
+@media screen and (max-width:460px) {
+    .comment-form {
+        // flex-wrap: nowrap;
+        // flex-direction: column;
+        column-gap: 20px;
+    }
+}

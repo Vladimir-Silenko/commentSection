@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/a6/a68b6b0b2fd8d628730532e68e10e2be.jpeg);
+    background-size: cover;
+
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    font-family: 'Karla',
+    sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    background-color: #000000b3;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+
+    .comments-warning {
+        color: black;
+        width: 25%;
+        transition: all ease-in-out 1s;
+    }
+
+    @import 'comment-section.scss';
+    @import 'form.scss';
+}
+
+@media screen and (max-width: 821px) {
+    .container {
+        width: 100%;
+        margin: 0;
+
+        .comments-warning {
+            display: none;
+        }
+    }
+}
